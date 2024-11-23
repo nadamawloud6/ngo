@@ -49,11 +49,11 @@ https://templatemo.com/tm-581-kind-heart-charity
 -----------------------------------------*/
 :root {
   --white-color: #ffffff;
-  --primary-color: #000000;
+  --primary-color: rgb(0, 0, 0);
   --secondary-color:              #5a6f80;
   --section-bg-color:             #f0f8ff;
   --site-footer-bg-color:         #44525d;
-  --custom-btn-bg-color: #1d1b1e;
+  --custom-btn-bg-color: rgb(29, 27, 30);
   --custom-btn-bg-hover-color: #1d1b1e;
   --dark-color:                   #000000;
   --p-color: #1d1b1e;
@@ -210,6 +210,7 @@ strong {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre ajoutée */
 }
 
+
 .custom-block-wrap:hover {
   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
 }
@@ -322,7 +323,6 @@ strong {
 
 .navbar-expand-lg .navbar-nav .nav-link.custom-btn {
   color: var(--custom-btn-bg-color);
-  margin-top: 8px;
   padding: 12px 25px;
 }
 
@@ -925,7 +925,7 @@ blockquote::before {
 
 .cta-section::after {
   content: "";
-  border: 20px solid var(--custom-btn-bg-color);
+  border: 20px solid var(--custom-btn-bg-color) ;
   border-radius: 50%;
   position: absolute;
   bottom: -100px;
@@ -1777,19 +1777,25 @@ blockquote::before {
   height: 100px; /* Ajuste la hauteur selon tes préférences */
 }
 
+
+
 .navbar-nav {
   align-items: center; /* Assurer que les éléments de navigation sont alignés au centre verticalement */
 }
+
+
 
 .contact-btn {
   background: transparent; /* Fond transparent pour correspondre au style de l'image */
   color: #ffffff !important; /* Couleur du texte en blanc */
   padding: 10px !important; /* Espacement interne du bouton */
+  padding-left: 15px !important;
+  padding-right: 15px !important;
   border: 2px solid #ffffff; /* Bordure blanche */
   border-radius: 25px; /* Bords arrondis pour donner l'effet souhaité */
   text-transform: uppercase; /* Texte en majuscules */
   transition: all 0.3s ease-in-out; /* Animation de transition fluide */
-  margin-left: 55px !important;
+  margin-left: 20px !important;
 }
 
 .contact-btn:hover {
